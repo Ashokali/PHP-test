@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+/* Header */
+#head{
+   position: fixed;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+section{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+span{
+   color: blue;
+   font-weight: bold;
+}
+
+/* For Login form and Register form */
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 100px;
+   background: linear-gradient(140deg, lightpink, dodgerblue);
+}
+
+.form-container form{
+   padding:10px 50px;
+   border-radius: 15px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.7);
+   background: linear-gradient(120deg, lightblue, lightgreen);
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h2{
+   font-size: 35px;
+   margin-bottom: 20px;
+   color:#333;
+   text-decoration: underline;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:8px 15px;
+   font-size: 17px;
+   margin:10px 0;
+   background: #eee;
+   border-radius: 8px;
+}
+.form-container form input:hover{
+   box-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
+.form-container form select:hover{
+   box-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
+
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: dodgerblue;
+   color: black;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: blue;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:rgb(236, 100, 22);
+}
+.form-container form p a:hover{
+   color:red;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+/* End of Login form & Register form */
+
+
+/* Home */
+#home{
+   background: linear-gradient(140deg, lightblue, rgb(240, 49, 154));
+   padding-top: 30px;
+}
+/* about */
+#about{
+   padding-top: 30px;
+}
+
+/*---Products---*/
+#products{
+   padding: 50px 40px 20px 40px;
+   background: linear-gradient(130deg,rgb(117, 201, 230),rgb(226, 114, 114));
+}
+#products img{
+   height: 200px;
+}
+@media only screen and (max-width: 768px) {
+   #products img{
+       width: 70%;
+   }
+}
+
+#products1{
+   padding: 20px 40px;
+   background: linear-gradient(130deg,rgb(34, 233, 77),rgb(102, 73, 207));
+}
+#products1 img{
+   height: 200px;
+}
+@media only screen and (max-width: 768px) {
+   #products1 img{
+       width: 70%;
+   }
+}
+
+/* Contact */
+#contact{
+   background: linear-gradient(160deg, rgb(161, 241, 175), rgb(223, 224, 121));
+}
+#contact form{
+   background: linear-gradient(160deg, rgb(231, 92, 150), rgb(120, 79, 214));
+   padding: 40px;
+   box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+   border-radius: 30px;
+}
+
+
+/* Start Footer */
+.footer {
+   background: #212120;
+   padding-top: 85px;
+   text-align: center;
+}
+
+.footer .titlepage {
+   text-align: left;
+   padding-bottom: 0px;
+}
+
+.footer .titlepage h2 {
+   color: red;
+}
+
+.footer .address h3 {
+   color: red;
+   font-size: 30px;
+   line-height: 35px;
+   font-weight: 500;
+   padding-bottom: 20px;
+   text-align: left;
+}
+
+ul.location_icon li {
+   font-size: 17px;
+   text-align: left;
+   padding-right: 40px;
+   color: white;
+}
+
+ul.Menu_footer li {
+   display: block;
+   color: #3e7f21;
+   position: relative;
+}
+
+ul.Menu_footer li:before {
+   content: "";
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   border-radius: 20px;
+   background: #fff;
+   margin-top: 9px;
+   left: 0;
+}
+
+ul.Menu_footer li a {
+   display: block;
+   color: gray;
+   font-size: 17px;
+   padding-left: 30px;
+   text-align: left;
+}
+
+ul.Menu_footer li a:hover {
+   color: #0eadef;
+}
+
+ul.social_icon li {
+   display: block;
+   padding-bottom: 11px;
+}
+
+ul.social_icon li a {
+   font-size: 18px;
+   color: whitesmoke;
+   display: inherit;
+}
+
+ul.social_icon li a:hover {
+   color: #0eadef;
+}
+
+ul.social_icon li a i {
+   background: #fff;
+   width: 37px;
+   height: 37px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 22px;
+   border-radius: 30px;
+   color: black;
+   margin-top: -33px;
+}
+
+ul.social_icon li a i:hover {
+   color: #810e9e;
+}
+
+.bottom_form h3 {
+   font-weight: 600;
+   font-size: 20px;
+   text-align: left;
+   color: #fff;
+   padding-bottom: 15px;
+}
+
+.bottom_form .enter {
+   border: inherit;
+   padding: 0px 19px;
+   width: 100%;
+   height: 53px;
+   background: #fff;
+   color: #828282;
+   font-size: 17px;
+   border-radius: 10px;
+   margin-bottom: 25px;
+}
+
+.sub_btn {
+   font-size: 19px;
+   transition: ease-in all 0.5s;
+   background-color: dodgerblue;
+   color: #fff;
+   padding: 11px 0px;
+   max-width: 175px;
+   width: 100%;
+   display: block;
+   text-transform: uppercase;
+   border-radius: 10px;
+   border: inherit;
+   box-shadow: inherit;
+}
+
+.sub_btn:hover {
+   background-color: blue;
+   transition: ease-in all 0.5s;
+   color: #fff;
+}
+
+.copyright {
+   margin-top: 65px;
+   padding: 20px 0;
+   background: #1380a8;
+}
+
+.copyright p {
+   color: #fff;
+   font-size: 17px;
+   line-height: 22px;
+   text-align: center;
+   font-weight: normal;
+}
+
+.copyright a {
+   color: yellowgreen;
+}
+
+.copyright a:hover {
+   color: #212120;
+}
+
+/** end footer **/
+
